@@ -27,8 +27,11 @@ mongoose
 //application routes
 
 //root route
+// app.get("/", (req, res) => {
+//   res.send("Henosis server is running");
+// });
 app.get("/", (req, res) => {
-  res.send("Henosis server is running");
+  res.send("all is well");
 });
 
 // default error handler
@@ -42,3 +45,5 @@ function errorHandler(req, res, err, next) {
 app.listen(port, () => {
   console.log(`Boss! I am listening to you at port:${port}`);
 });
+
+//link- https://desolate-plains-82544.herokuapp.com/
